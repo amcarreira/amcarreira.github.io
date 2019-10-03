@@ -1,12 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
         <meta charset="utf-8" >
-        <title>My First Webpage</title>
+        <!-- mobile device -->
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <meta name = "Description" content = "Adam Carreira's Portfolio">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+        
+        <title> Adam Carreira's Portfolio </title>
+        <style> 
+        h1 { text-align: center; margin-top: 0px; color: whitesmoke; font-weight: bold }
+        h2 { text-align: center; margin-top: 0px; color: whitesmoke; font-variant: small-caps ; font-weight: bold}
+        h3 { text-align: center; margin-top: 0px; color: whitesmoke; font-variant: small-caps ; font-weight: bold; font-size: large}
+        p { text-align: center; margin-top: 0px; color: #d9d8d6; font-variant: small-caps }
+        i { color: #d9d8d6; font-size:smaller }
+        .striped-border {
+        border: 50px black;
+        width: 100%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+        .zig-zag {
+        border: none;
+        width: 75%;
+        margin: auto;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        height: 5px;
+        background-color: #d0b787 ;
+        }
+        @media only screen and (max-width:720px)
+        {
+        small {display: none;}
+        iframe {max-width: 100%;}
+        }
+        </style>
     </head>
-    <body>
+    <body style = "background-color: black">
+        
         <!-- This is a comment -->
-        <h1> Adam Carreira </h1>
-        <h1> Helloooo </h1>
+        <h1> <a href="www.linkedin.com/in/adamcarreira"> <i class="fab fa-linkedin-in"></i></a> &nbsp Adam Carreira's Portfolio &nbsp <a href="www.facebook.com/"> <i class="fab fa-facebook-f"></i></a> </h1>
+        <p class = "zig-zag"></p>
+        <br>
+        <!--<p style = "background-color: black; width: 45%; margin: auto; font-variant: normal"> I am a Computer Science student in my junior year at Bridgewater State University. Please navigate through this page to see why I am the perfect candidate for your position! If you have any questions, <br> please reach out to me via the contact page!</p> -->
+        <!-- Place link to resume here -->
+        <h2> Programming Languages Learned </h2>
+        <div class = "row">
+            <div class = "col-sm">
+                <p style = "text-align: right"> C <br> Java <br> Python <br> BASIC </p></div>
+            <div class = col-sm> 
+                <p style = "text-align: left"> CSS <br> HTML <br> Bootstrap <br> Javascript </p></div>
+        </div>
+        <div class = "row">
+            <div class = "col-sm">
+                <h2> Work Experience</h2>
+                <h3> Crossed Sabers Ski & Board </h3>
+                <p> Hardgoods Tech: <br> 
+                        As a hardgoods tech, my job was to merchandise, sell, and maintain skis and snowboards. Customers would see a salesman, but I would also tune up and fix customers' skis and snowboards.</p>
+                <h3> Humphrey's Building Supply </h3>
+                <p> Inside Sales, Yard Labor, Delivery Driver: <br>
+                        I have worked at Humphrey's since my senior year in high school. During the summer I work 40+ hours a week. With that much time in one company, they have given me opportunities at many positions. A typical day consists of starting inside selling product, then going outside to help customers find the product and load it in their vehicle, and potentially delivering the products for them. </p>
+                <h3> Bridgewater State University </h3>
+                <p> Tour Guide: <br> My responsibilities as a Bridgewater State University Tour Guide included greeting prospective students and introducing them to college. This position improved my customer service skills. </p>
+            </div>
+            <div class =" col-sm">
+                <h2> Education </h2>
+                <h3> Bridgewater State University </h3>
+                <p> Bachelor of Science degree in Computer Science <br>
+                        Honors & Awards: Computer Science Departmental Honors - Spring 2018, Dean’s List <br>
+                        Total GPA: 3.5, University GPA: 2.74 </p>
+                <h3> Westfield State University </h3>
+                <p> Coursework in Computer Science <br>
+                        Honors and Awards: Honors Program, Dean’s List all semesters <br>
+                        University GPA: 3.75 </p>
+            </div>
+            
+        </div>
+
     </body>
 </html>
