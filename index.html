@@ -32,23 +32,17 @@
             background-color: #d0b787;
         }
 
-        .mobileShow {display: none;} 
-
-        /* Smartphone Portrait and Landscape */ 
-            @media only screen 
-            and (min-device-width : 320px) 
-            and (max-device-width : 480px){ 
-            .mobileShow {display: inline;}
+        @media (orientation:landscape) {
+        .hide-on-landscape {
+            display: none;
+            }
         }
 
-        .mobileHide { display: inline; } 
-
-        /* Smartphone Portrait and Landscape */ 
-            @media only screen 
-            and (min-device-width : 320px) 
-            and (max-device-width : 400px){ 
-            .mobileHide { display: none;}
-}
+        @media (orientation:portrait) {
+        .hide-on-portrait {
+            display: none;
+            }
+        }
 
         @media only screen and (max-width:720px) {
         small {display: none;}
@@ -60,7 +54,7 @@
         <!-- First Row -->
         <div class = "row">
              <div class = "col-sm-4">
-                 <div class = "mobileHide">
+                 <div class = "hide-on-portrait">
                 <a href="https://www.linkedin.com/in/adamcarreira"> <i class="fab fa-linkedin-in" style = "font-size: 40px; margin: 2%"></i></a>
                 </div>
             </div>
@@ -68,7 +62,7 @@
                 <h1 style = "width: auto; white-space: nowrap">Adam Carreira</h1>
             </div>   
             <div class = "col-sm-4"> 
-                <div class="mobileShow">
+                <div class="hide-on-landscape">
                     <a href="https://www.linkedin.com/in/adamcarreira"> <i class="fab fa-linkedin-in" style = "font-size: 40px; margin: 2%"></i></a>
                 </div>
                 <a href="https://www.facebook.com/adammcarreira"> <i class="fab fa-facebook-f" style = "font-size: 36px; margin: 2%"></i></a>
