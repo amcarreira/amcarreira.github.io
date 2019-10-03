@@ -31,6 +31,25 @@
             height: 5px;
             background-color: #d0b787;
         }
+
+        .mobileShow {display: none;} 
+
+        /* Smartphone Portrait and Landscape */ 
+            @media only screen 
+            and (min-device-width : 320px) 
+            and (max-device-width : 480px){ 
+            .mobileShow {display: inline;}
+        }
+
+        .mobileHide { display: inline; } 
+
+        /* Smartphone Portrait and Landscape */ 
+            @media only screen 
+            and (min-device-width : 320px) 
+            and (max-device-width : 480px){ 
+            .mobileHide { display: none;}
+}
+
         @media only screen and (max-width:720px) {
         small {display: none;}
         iframe {max-width: 100%;}
@@ -40,14 +59,18 @@
     <body style = "background-color: black">
         <!-- First Row -->
         <div class = "row">
-            <div class = "col-sm-3 col-sm-pull-3" style = "margin: 0%">
-                <h1 style = "width: auto; white-space: nowrap">Adam Carreira</h1>
-            </div>
-            <div class = "col-sm-3 col-sm-push-3">
+             <div class = "col-sm-4">
+                 <div class = "mobileHide">
                 <a href="https://www.linkedin.com/in/adamcarreira"> <i class="fab fa-linkedin-in" style = "font-size: 40px; margin: 2%"></i></a>
+                </div>
             </div>
-           
-            <div class = "col-sm-3"> 
+            <div class = "col-sm-4" style = "margin: 0%">
+                <h1 style = "width: auto; white-space: nowrap">Adam Carreira</h1>
+            </div>   
+            <div class = "col-sm-4"> 
+                <div class="mobileShow">
+                    <a href="https://www.linkedin.com/in/adamcarreira"> <i class="fab fa-linkedin-in" style = "font-size: 40px; margin: 2%"></i></a>
+                </div>
                 <a href="https://www.facebook.com/adammcarreira"> <i class="fab fa-facebook-f" style = "font-size: 40px; margin: 2%"></i></a>
             </div>   
         </div>
@@ -88,13 +111,13 @@
             <div class = "col-sm">
                 <h2> Work Experience</h2>
                 <h3> Crossed Sabers Ski & Board </h3>
-                <p> Hardgoods Tech: <br> 
+                <p> <u>Hardgoods Tech:</u><br> 
                         As a hardgoods tech, my job was to merchandise, sell, and maintain skis and snowboards. Customers would see a salesman, but I would also tune up and fix customers' skis and snowboards.</p>
                 <h3> Humphrey's Building Supply </h3>
-                <p> Inside Sales, Yard Labor, Delivery Driver: <br>
+                <p><u>Inside Sales, Yard Labor, Delivery Driver:</u><br>
                         I have worked at Humphrey's since my senior year in high school. During the summer I work 40+ hours a week. With that much time in one company, they have given me opportunities at many positions. A typical day consists of starting inside selling product, then going outside to help customers find the product and load it in their vehicle, and potentially delivering the products for them. </p>
                 <h3> Bridgewater State University </h3>
-                <p> Tour Guide: <br> My responsibilities as a Bridgewater State University Tour Guide included greeting prospective students and introducing them to college. This position improved my customer service skills. </p>
+                <p><u>Tour Guide:</u><br> My responsibilities as a Bridgewater State University Tour Guide included greeting prospective students and introducing them to college. This position improved my customer service skills. </p>
             </div>
             <div class ="col-sm">
                 <h2> Education </h2>
