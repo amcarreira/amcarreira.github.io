@@ -14,23 +14,23 @@
         h1 { text-align: center; margin-top: 0px; color: whitesmoke; font-weight: bold }
         h2 { text-align: center; margin-top: 0px; color: whitesmoke; font-variant: small-caps ; font-weight: bold}
         h3 { text-align: center; margin-top: 0px; color: whitesmoke; font-variant: small-caps ; font-weight: bold; font-size: large}
-        p { text-align: center; margin-top: 0px; color: #d9d8d6; font-variant: small-caps }
+        q { text-align: center; margin-top: 0px; color: #d9d8d6; font-style: italic; font-size: smaller}
+        p { text-align: center; margin-top: 0px; color: #d9d8d6; font-variant: normal }
         i { color: #d9d8d6; font-size:smaller }
-        .striped-border {
-        border: 50px black;
-        width: 100%;
-        margin: auto;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-        .zig-zag {
-        border: none;
-        width: 75%;
-        margin: auto;
-        margin-top: 0%;
-        margin-bottom: 0%;
-        height: 5px;
-        background-color: #d0b787 ;
+
+        .row {
+            width: auto;
+            text-align: center;
+        }
+
+        .line-break {
+            border: none;
+            width: 75%;
+            margin: auto;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            height: 5px;
+            background-color: #d0b787;
         }
         @media only screen and (max-width:720px)
         {
@@ -42,18 +42,40 @@
     <body style = "background-color: black">
         
         <!-- This is a comment -->
-        <h1> <a href="www.linkedin.com/in/adamcarreira"> <i class="fab fa-linkedin-in"></i></a> &nbsp Adam Carreira's Portfolio &nbsp <a href="www.facebook.com/"> <i class="fab fa-facebook-f"></i></a> </h1>
-        <p class = "zig-zag"></p>
-        <br>
-        <!--<p style = "background-color: black; width: 45%; margin: auto; font-variant: normal"> I am a Computer Science student in my junior year at Bridgewater State University. Please navigate through this page to see why I am the perfect candidate for your position! If you have any questions, <br> please reach out to me via the contact page!</p> -->
-        <!-- Place link to resume here -->
-        <h2> Programming Languages Learned </h2>
         <div class = "row">
             <div class = "col-sm">
-                <p style = "text-align: right"> C <br> Java <br> Python <br> BASIC </p></div>
-            <div class = col-sm> 
-                <p style = "text-align: left"> CSS <br> HTML <br> Bootstrap <br> Javascript </p></div>
+                <a href="https://www.linkedin.com/in/adamcarreira"> <i class="fab fa-linkedin-in" style = "font-size: 40px; margin-top: 2%"></i></a>
+            </div>
+            <div class = "col-sm" style = "margin: 0%">
+                <h1 style = "width: 500px">Adam Carreira's Portfolio</h1>
+            </div>
+            <div class = "col-sm"> 
+                <a href="https://www.facebook.com/adammcarreira"> <i class="fab fa-facebook-f" style = "font-size: 40px; margin-top: 2%"></i></a>
+            </div>   
         </div>
+
+        <p class = "line-break"></p>
+        <div class = "row">
+            <div class = "col-sm" style = "margin-top:0%">
+                <q> Progress, man's distinctive mark alone, Not God's, and not the beasts'; God is, they are. Man partly is and wholly hopes to be. </q>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = col-sm>
+                <button type="button" href="file:///Users/student/Documents/amcarreira.github.io/Adam Carreira Resume.pdf" class="btn btn-outline-light" style="margin:1%">Resume</button>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-sm">
+                <h2> Programming Languages </h2>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-sm">
+                <p style = "width:auto"> &nbsp C &nbsp &nbsp &nbsp &nbsp CSS &nbsp<br> Java &nbsp &nbsp &nbsp HTML &nbsp<br> Python &nbsp Bootstrap<br> BASIC &nbsp &nbspJavascript</p></div>
+            <!-- <div class = col-sm> 
+                <p style = "width:25px"> CSS <br> HTML <br> Bootstrap <br> Javascript </p></div> -->
+        </div> 
         <div class = "row">
             <div class = "col-sm">
                 <h2> Work Experience</h2>
@@ -76,6 +98,8 @@
                 <p> Coursework in Computer Science <br>
                         Honors and Awards: Honors Program, Dean’s List all semesters <br>
                         University GPA: 3.75 </p>
+                <h2> Volunteer Experience </h2>
+                <p> Gillette Volunteer, Project PACK, Sigma Pi's Altruistic Campus Experience, St. Bernard's Life Teen Program, Somerset-Berkley's Big Buddy Program </p>
             </div>
             
         </div>
